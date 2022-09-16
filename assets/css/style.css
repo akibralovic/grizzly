@@ -478,7 +478,7 @@ main {
 .new {
   align-items: center;
   display: flex;
-  width: 800px;
+  width: 100%;
   min-width: 220px;
   gap: 20px;
 }
@@ -491,11 +491,15 @@ main {
   text-decoration-line: underline;
 }
 
+.show-item{
+display: flex;
+flex-direction: row;
+}
+
 .dropdown {
   align-items: right;
   justify-content: right;
   display: flex;
-  width: 750px;
   color: var(--sortText-color);
   font-size: 12px;
   line-height: 14px;
@@ -597,13 +601,20 @@ main {
   margin-top: 27px;
   display: flex;
   width: 100%;
+
+}
+.articles{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   gap: 18px;
+
 }
 
 .article1 {
   display: flex;
   border: 1px solid #e4e4e4;
-  height: 651px;
+  height: 100%;
   width: 223px;
   flex-direction: column;
   padding-left: 20px;
@@ -615,6 +626,7 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .art-btn button {
@@ -684,9 +696,8 @@ main {
 }
 
 .article-about {
-  width: 100%;
-  min-width: 130px;
-  height: 120px;
+  min-width: 140px;
+  height: 160px;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;

@@ -1,11 +1,11 @@
-const menuBtn = document.querySelector('.menu-btn')
-const navLinks = document.querySelector('.navbar')
+// const menuBtn = document.querySelector('.menu-btn')
+// const navLinks = document.querySelector('.navbar')
 
-$(document).ready(function(){
-  $("#prvi").click(function(){
+// $(document).ready(function(){
+//   $("#prvi").click(function(){
     
-  });
-}); 
+//   });
+// }); 
 
 
 
