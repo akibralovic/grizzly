@@ -122,15 +122,15 @@
           </div>
         </div>
 
-        <div class="first-row">
+        <div class="first-row" id="first-row">
           <h3>Štapovi</h3>
           <p>25+ proizvoda</p>
         </div>
-        <div class="second-row">
+        <div class="second-row" id="second-row">
           <h3>Varalice</h3>
           <p>65+ proizvoda</p>
         </div>
-        <div class="third-row">
+        <div class="third-row" id="third-row">
           <h3>Plovci</h3>
           <p>50+ proizvoda</p>
         </div>
@@ -194,9 +194,9 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
               volutpat. Ut wisi enim ad.
             </p>
-            <h3><s>3.999,99 RSD</s></h3>
-            <h3>2.999,99 RSD</h3>
-            <div class="art-btn">
+            <h3><span><s>3.999,99 RSD</s> </span><br>
+              2.999,99 RSD</h3>
+              <div class="art-btn">
               <button>Dodaj u korpu</button>
               <br />
               <button>Dodaj na listu zelja</button>
@@ -224,9 +224,9 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
               volutpat. Ut wisi enim ad.
             </p>
-            <h3><s>3.999,99 RSD</s></h3>
-            <h3>2.999,99 RSD</h3>
-            <div class="art-btn">
+            <h3><span><s>3.999,99 RSD</s> </span><br>
+              2.999,99 RSD</h3>
+              <div class="art-btn">
               <button>Dodaj u korpu</button>
               <br />
               <button>Dodaj na listu zelja</button>
@@ -254,9 +254,9 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
               volutpat. Ut wisi enim ad.
             </p>
-            <h3><s>3.999,99 RSD</s></h3>
-            <h3>2.999,99 RSD</h3>
-            <div class="art-btn">
+            <h3><span><s>3.999,99 RSD</s> </span><br>
+              2.999,99 RSD</h3>
+              <div class="art-btn">
               <button>Dodaj u korpu</button>
               <br />
               <button>Dodaj na listu zelja</button>
@@ -284,8 +284,8 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
               volutpat. Ut wisi enim ad.
             </p>
-            <h3><s>3.999,99 RSD</s></h3>
-            <h3>2.999,99 RSD</h3>
+            <h3><span><s>3.999,99 RSD</s> </span><br>
+              2.999,99 RSD</h3>
             <div class="art-btn">
               <button>Dodaj u korpu</button>
               <br />
@@ -314,8 +314,8 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
               volutpat. Ut wisi enim ad.
             </p>
-            <h3><s>3.999,99 RSD</s></h3>
-            <h3>2.999,99 RSD</h3>
+            <h3><span><s>3.999,99 RSD</s> </span><br>
+              2.999,99 RSD</h3>
             <div class="art-btn">
               <button>Dodaj u korpu</button>
               <br />
@@ -324,14 +324,17 @@
           </article>
           <article class="article1">
             <div class="art-img">
-              <img src="./assets/img/kutija1.webp" alt="Fioka sa Pregradama" />
-              <div class="art-set">
-                <img src="./assets/img/indikator.webp" alt="Indikarot" />
-                <img
-                  src="./assets/img/najlonZaRibolov1.webp"
-                  alt="Najlon za ribolov"
-                />
-                <img src="./assets/img/olovo.webp" alt="olovo" />
+              <div class="hobby">
+                <div class="art-set">
+                  <img src="./assets/img/kutija1.webp" alt="Fioka sa Pregradama" /></div>
+                <div class="art-set">
+                  <img src="./assets/img/indikator.webp" alt="Indikarot" />
+                  <img
+                    src="./assets/img/najlonZaRibolov1.webp"
+                    alt="Najlon za ribolov"
+                  />
+                  <img src="./assets/img/olovo.webp" alt="olovo" />
+                </div>
               </div>
             </div>
             <h2>Hobby set za ribolov</h2>
@@ -348,9 +351,9 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
               volutpat. Ut wisi enim ad.
             </p>
-            <h3><s>3.999,99 RSD</s></h3>
-            <h3>2.999,99 RSD</h3>
-            <div class="art-btn">
+            <h3><span><s>3.999,99 RSD</s> </span><br>
+              2.999,99 RSD</h3>
+              <div class="art-btn">
               <button>Dodaj u korpu</button>
               <br />
               <button>Dodaj na listu zelja</button>
@@ -427,25 +430,25 @@
               <button>Vise o nama</button>
             </div>
           </div>
-          <div class="form">
+          <div class="form-info">
             <h2>Posaljite nam poruku</h2>
             <p>
               U slučaju da vam treba više informacija u vezi naše firme ili
               proizvoda, mozete nam poslati e-mail putem kontakt forme.
             </p>
-            <div class="form-input">
-              <div class="name-surname">
-                <input type="text" placeholder="Ime" />
-                <input type="text" placeholder="Prezime" />
-              </div>
-              <div class="email-company">
-                <input type="text" placeholder="Email" />
-                <input type="text" placeholder="Firma" />
-              </div>
-              <div class="more">
-                <textarea name="" id="" cols="100" rows="10" placeholder="Vase pitanja"></textarea>
-              </div>
-            </div>
+            <form action="" class="form-input">
+                <div class="name-surname">
+                  <input type="text" placeholder="Ime" />
+                  <input type="text" placeholder="Prezime" />
+                </div>
+                <div class="email-company">
+                  <input type="email" placeholder="Email" />
+                  <input type="text" placeholder="Firma" />
+                </div>
+                <div class="more">
+                  <textarea name="" id="" cols="100" rows="10" placeholder="Vase pitanja" maxlength="400"></textarea>
+                </div>
+            </form>
             <div class="form-btn"><button>Posalji</button></div>
           </div>
         </div>

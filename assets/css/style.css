@@ -23,6 +23,7 @@
   --buttonArticleText-color: #f6ab67;
 
   --footer-color: #f4f4f4;
+  --lineoverText-color: #CBCBCB;
 }
 * {
   margin: 0;
@@ -374,6 +375,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  cursor: pointer;
 }
 .second-row {
   grid-area: second;
@@ -383,6 +385,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  cursor: pointer;
+
 }
 .third-row {
   grid-area: third;
@@ -393,6 +397,8 @@ main {
 
   background-size: cover;
   height: 200px;
+  cursor: pointer;
+
 }
 
 .main-header h1 {
@@ -653,6 +659,7 @@ flex-direction: row;
 .art-img {
   display: flex;
   padding: 30px 0;
+  flex-direction: row;
   justify-content: center;
   height: 130px;
 }
@@ -660,10 +667,15 @@ flex-direction: row;
   padding: 10px;
   max-height: 100%;
 }
-
-.art-set img {
+.hobby{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-set{
+  display: flex;
 }
 
 .article1 h2 {
@@ -705,6 +717,13 @@ flex-direction: row;
   font-size: 12px;
   line-height: 20px;
   padding-top: 20px;
+}
+
+h3 span{
+  color: var(--lineoverText-color);
+  font-weight: 400;
+font-size: 20px;
+line-height: 23px;
 }
 
 /* Categories */
@@ -824,7 +843,7 @@ flex-direction: row;
 
 /* Form */
 
-.form {
+.form-info {
   display: flex;
 
   flex-direction: column;
@@ -832,7 +851,7 @@ flex-direction: row;
   min-width: 600px;
 }
 
-.form h2 {
+.form-info h2 {
   display: flex;
   color: var(--sortText-color);
   width: 100%;
@@ -840,7 +859,7 @@ flex-direction: row;
   font-weight: 700;
 }
 
-.form p {
+.form-info p {
   display: flex;
   color: var(--sortText-color);
   font-weight: 400;
@@ -851,7 +870,7 @@ flex-direction: row;
   padding-top: 27px;
 }
 
-.form input {
+.form-info input {
   padding: 10px;
   width: 600px;
 }
@@ -883,7 +902,7 @@ flex-direction: row;
   padding-top: 40px;
   width: 400px;
 }
-.form button {
+.form-info button {
   background: var(--button-color);
   border: none;
   width: 230px;
