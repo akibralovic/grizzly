@@ -677,6 +677,7 @@ flex-direction: row;
   font-size: 15px;
   gap: 10px 10px;
   padding-bottom: 10px;
+  /* white-space: nowrap; */
 }
 .iconHeart img {
   width: 15px;
@@ -688,6 +689,8 @@ flex-direction: row;
   font-weight: 400;
   font-size: 15px;
   gap: 10px 10px;
+  /* white-space: nowrap; */
+
 }
 
 .iconCart img {
@@ -868,6 +871,11 @@ flex-direction: row;
 .more {
   display: flex;
   min-width: 300px;
+  
+}
+.more textarea{
+  padding: 8px;
+  
 }
 
 .form-btn {
