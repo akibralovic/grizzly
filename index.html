@@ -325,8 +325,7 @@
           <article class="article1">
             <div class="art-img">
               <div class="hobby">
-                <div class="art-set">
-                  <img src="./assets/img/kutija1.webp" alt="Fioka sa Pregradama" /></div>
+                  <img src="./assets/img/kutija1.webp" alt="Fioka sa Pregradama" />
                 <div class="art-set">
                   <img src="./assets/img/indikator.webp" alt="Indikarot" />
                   <img
@@ -438,18 +437,20 @@
             </p>
             <form action="" class="form-input">
                 <div class="name-surname">
-                  <input type="text" placeholder="Ime" />
-                  <input type="text" placeholder="Prezime" />
+                  <input type="text"  placeholder="Ime" id="name" name="name" required/>
+                  <input type="text" placeholder="Prezime" id="subname" name="subname" />
                 </div>
                 <div class="email-company">
-                  <input type="email" placeholder="Email" />
-                  <input type="text" placeholder="Firma" />
+                  <input type="email" placeholder="Email" id="email" name="email" required/>
+                  <input type="text" placeholder="Firma" id="company" name="company" />
                 </div>
                 <div class="more">
-                  <textarea name="" id="" cols="100" rows="10" placeholder="Vase pitanja" maxlength="400"></textarea>
+                  <textarea name="questions" id="questions" cols="100" rows="10" placeholder="Vase pitanja" maxlength="400" required></textarea>
                 </div>
-            </form>
-            <div class="form-btn"><button>Posalji</button></div>
+            <div class="form-btn"><button id="send" type="button" onclick="myQuestion()">Posalji</button></div> 
+
+          </form>
+
           </div>
         </div>
         <div class="group-of-img">
