@@ -8,9 +8,14 @@
 
   --header-color: #1b1b1b;
 
+  --hover-color: linear-gradient(93.76deg, #d58286 -2.31%, #ecb887 102.88%);
+
   --search-color: #ffffff;
 
   --layoutText-color: #ffffff;
+
+  --layoutHover-color: #fef5f5;
+
 
   --whereText-color: rgba(255, 255, 255, 0.5);
 
@@ -339,6 +344,11 @@ main {
   box-sizing: content-box;
   border: none;
 }
+
+.layout-btn button:hover{
+  background: var(--hover-color);
+} 
+
 .layout-btn img {
   width: 184px;
   height: 40px;
@@ -549,10 +559,20 @@ flex-direction: row;
   cursor: pointer;
 }
 
+.art-btn button:hover{
+  background: var(--hover-color);
+  color: var(--layoutText-color);
+
+}
+
 .art-btn button:last-child {
-  background: none;
+  background: var(--layoutText-color);
   border: 1px solid var(--buttonArticleText-color);
   color: var(--buttonArticleText-color);
+}
+
+.art-btn button:last-child:hover {
+  background: var(--layoutHover-color);
 }
 
 .art-img {
@@ -748,6 +768,10 @@ line-height: 23px;
   line-height: 20px;
 }
 
+.about button:hover{
+  background: var(--hover-color);
+} 
+
 /* Form */
 
 .form-info {
@@ -819,6 +843,10 @@ line-height: 23px;
   font-size: 15px;
   line-height: 20px;
   cursor: pointer;
+}
+.form-info button:hover{
+  background: var(--hover-color);
+
 }
 
 /* Group of images */
