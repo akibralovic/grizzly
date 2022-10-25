@@ -1316,8 +1316,42 @@ h3 span {
 }
 
 /* Articles */
+.article1{
+  display: none;
+}
 
+.articles{
+  display: flex;
+  padding-left: var(--phone-margine);
+  padding-right: var(--phone-margine);
+}
+.article1:first-child{
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+.art-img{
+  display: flex;
+  width: 300px;
+  height: 100%;
 
+}
+.art-img img{
+
+}
+
+.article1 h2{
+  width: auto;
+  padding-bottom: 20px;
+}
+.article-about{
+  display: flex;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
 
   /* Categories */
 
