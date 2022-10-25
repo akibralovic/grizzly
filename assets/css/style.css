@@ -566,7 +566,7 @@ main {
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-  min-width: 130px;
+  min-width: 140px;
 }
 
 .art-btn {
@@ -1295,10 +1295,32 @@ h3 span {
     background-image: url("../img/fishingFloatsMobile.webp") center !important;
   }
 
+  /* Sponsors */
+
   .sponsors {
     padding-left: 50px;
     padding-right: 50px;
+  
   }
+
+  /* Sort & dropdown */
+
+  .new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.dropdown,
+.view{
+  display: none;
+}
+
+/* Articles */
+
+
+
+  /* Categories */
+
   .categories {
     display: flex;
     align-items: stretch;
