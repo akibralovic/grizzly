@@ -730,7 +730,7 @@ h3 span {
 
 .categories1 {
   position: relative;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .categories1 img {
@@ -861,8 +861,10 @@ h3 span {
 }
 
 .form-info input {
+  display: flex;
   padding: 10px;
   width: 600px;
+  min-width: 320px;
 }
 
 .name-surname {
@@ -881,8 +883,7 @@ h3 span {
 
 .more {
   display: flex;
-  min-width: 300px;
-
+  min-width: 320px;
 }
 
 .more textarea {
@@ -1395,16 +1396,58 @@ h3 span {
   .categories {
     display: flex;
     align-items: stretch;
-  }
+   }
 
   .categories-grid {
     display: flex;
     flex-direction: column;
     width: 1;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .categories h2 {
     display: flex;
     justify-content: center;
   }
+  .categories a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+  }
+  .categories1 a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+position: absolute;
+left: 0;
+font-size: 20px;
+  }
+
+.about-form{
+  min-width: 320px;
+}
+  /* Form */
+.form-info{
+  min-width: 320px;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-left: var(--phone-margine);
+
+
+}
+.name-surname{
+  flex-direction: column;
+}
+.email-company{
+  flex-direction: column;
+}
+.more{
+
+}
 }
