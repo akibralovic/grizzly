@@ -296,6 +296,8 @@ main {
   background-size: cover;
   height: 200px;
   cursor: pointer;
+  justify-content: center;
+
 }
 
 .second-row {
@@ -307,6 +309,7 @@ main {
   background-size: cover;
   height: 200px;
   cursor: pointer;
+  justify-content: center;
 
 }
 
@@ -319,6 +322,8 @@ main {
   background-size: cover;
   height: 200px;
   cursor: pointer;
+  justify-content: center;
+
 
 }
 
@@ -386,7 +391,6 @@ main {
 .third-row h3 {
   display: flex;
   justify-content: center;
-  margin-top: 72px;
   width: 100%;
   font-weight: 900;
 
@@ -1113,6 +1117,10 @@ h3 span {
     padding-top: 120px;
   }
 
+  #art4,#art5,#art6{
+    display: none;
+  }
+
   .slides {
     display: flex;
     flex-direction: row;
@@ -1309,14 +1317,26 @@ h3 span {
 
   .first-row {
     background-image: url("../img/fishingRodsModile.png") center !important;
+    min-height: 265px;
+    background-position: center;
+    justify-content: center;
   }
 
   .second-row {
+    display: flex;
     background-image: url("../img/fishingLuresMobile.webp") center !important;
+    min-height: 265px;
+    background-position: center;
+    justify-content: center;
+
   }
 
   .third-row {
     background-image: url("../img/fishingFloatsMobile.webp") center !important;
+    min-height: 265px;
+    background-position: center;
+    justify-content: center;
+
   }
 
   /* Sponsors */
