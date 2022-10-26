@@ -994,7 +994,8 @@ h3 span {
 
   .mob-menu,
   .mob-search,
-  .slides {
+  .slides,
+  .mobile-menu{
     display: none;
   }
 
@@ -1037,6 +1038,46 @@ h3 span {
   .nav-end {
     display: none !important;
   }
+
+/* Mobile menu */
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--header-color);
+  padding-left: var(--tablet-margine);
+  padding-right: var(--tablet-margine);
+  color: var(--layoutText-color);
+
+}
+.location-mobile{
+  display: flex;
+  flex-direction: row;
+gap: 20px; 
+justify-content: center;
+padding-top: 30px; 
+}
+.where-icon{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header-end-mobile{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-end-mobile a{
+  text-decoration: none;
+color: var(--layoutText-color);
+}
+
+
+
 
   .nav-row {
     display: flex;

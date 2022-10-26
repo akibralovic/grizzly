@@ -30,7 +30,7 @@
   <header>
     <div class="header-container">
       <div class="mob-menu">
-        <img src="./assets/img/mob-menu.png" alt="Mobile menu">
+        <a href="javascript:void(0);" class="burger-menu" onclick="mobileMenuFunction()"><img src="./assets/img/mob-menu.png" alt="Mobile menu"></a>
       </div>
       <div class="logo">
         <img src="./assets/img/logo.png" alt="Logo Grizzly" />
@@ -65,6 +65,7 @@
         <img src="./assets/img/search.webp" alt="Search">
       </div>
     </div>
+
   </header>
 
   <nav>
@@ -90,6 +91,29 @@
 
     </div>
   </nav>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="location-mobile">
+          <div class="where-icon">
+            <img src="./assets/img/locationIcon.png" alt="Location icon" />
+            <p>Gde se nalaze naši proizvodi?</p>
+          </div>
+          <div class="places-mobile">
+            <p><strong>Beograd</strong></p>
+          </div>
+        </div>
+        <div class="header-end-mobile">
+          <div class="wish-list-mobile">
+            <img src="./assets//img/heartIcon.png" alt="Heart Icon for wish list" />
+            <a href="#">Lista želja (0)</a>
+          </div>
+          <div class="cart-list-mobile">
+            <img src="./assets//img/cartIcon.png" alt="Basket Icon for cart" />
+            <a href="#">Korpa (0)</a>
+          </div>
+        </div>
+      </div>
 
   <main>
     <div class="layout">
