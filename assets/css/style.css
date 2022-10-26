@@ -1046,7 +1046,7 @@ h3 span {
 
 /* Mobile menu */
 .mobile-menu{
-  display: flex;
+  display: blocka;
   flex-direction: column;
   background-color: var(--header-color);
   padding-left: var(--tablet-margine);
