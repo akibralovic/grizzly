@@ -47,8 +47,30 @@ const catMenu = () => {
   })
 }
 
+const searchMenu = () => {
+  const srchMenu = document.getElementById('mob-srch');
+  const srchDiv = document.getElementById('search-mobile');
+
+  let active = true;
+  console.log('radi')
+
+  srchMenu.addEventListener('click', () =>{
+    if(!active){
+      srchDiv.classList.add('d-none')
+
+      return active = true;
+    }
+    if(active){
+      srchDiv.classList.remove('d-none')
+
+      return active = false;
+    }
+  })
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
   //funkciju pozivamo tek kada se dom ucita, kako se ne bi desilo da se ona pozove a brauzer jos uvek nije formirao dom element
   phoneMenu();
   catMenu();
+  searchMenu();
 })

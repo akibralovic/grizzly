@@ -1001,7 +1001,8 @@ h3 span {
   .mob-search,
   .slides,
   .mobile-menu,
-  .cat-mobile{
+  .cat-mobile,
+  .search-mobile{
     display: none;
   }
 
@@ -1043,6 +1044,43 @@ h3 span {
   .navbar,
   .nav-end {
     display: none !important;
+  }
+
+  .search-mobile{
+    padding-left: 20px;
+    padding-right: 15px;
+    display: flex;
+    background: var(--layoutText-color);
+    height: 40px;
+    width: 600px;
+    min-width: 300px;
+    border-radius: 5px;
+    
+  }
+
+  .search-img-mob{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+  }
+  .search-input-mob{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    outline: none;
+    width: 100%;
+  }
+  .search-input-mob input{
+    border: none !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    width: 80%;
+    outline: none;
+    letter-spacing: 0.02em;
+
   }
 
   .burger-menu{
@@ -1356,6 +1394,12 @@ color: var(--layoutText-color);
     padding-top: 40px;
     min-width: 320px;
   }
+
+  .search-mobile
+{
+height: 33px;
+padding-right: 9px;
+}
 
   .nav-row {
     min-width: 320px;

@@ -29,7 +29,7 @@
 <body>
   <header>
     <div class="header-container">
-      <div class="mob-menu">        
+      <div class="mob-menu">
         <a class="burger-menu" id="burger-menu"><img src="./assets/img/mob-menu.png" alt="Mobile menu"></a>
       </div>
       <div class="logo">
@@ -38,12 +38,26 @@
       <div class="search">
         <div class="container-block">
           <img src="./assets/img/searchIcon.png" alt="Search icon" />
-          <input type="text" name="" id="search"
+          <input type="text" name="Search" id="search"
             placeholder="Pretraži po kategoriji, ključnim rečima ili konkretnim nazivom željenog proizvoda" />
 
           <button>Pretraži</button>
         </div>
       </div>
+
+
+
+      <!-- Mobile search -->
+      <div class="search-mobile d-none" id="search-mobile">
+        <dic class="search-input-mob">
+          <input type="text" name="" id="search-mob"
+            placeholder="Pretraži po kategoriji, ključnim rečima ili konkretnim nazivom željenog proizvoda" />
+        </dic>
+        <div class="search-img-mob"><a href=""><img src="./assets/img/searchIcon.png" alt="Search icon" /></a>
+        <a href=""><img src="./assets/img/cancel-btn.png" alt="Cancel"></a></div>
+      </div>
+
+
       <div class="location">
         <img src="./assets/img/locationIcon.png" alt="Location icon" />
         <p>Gde se nalaze naši proizvodi?</p>
@@ -62,7 +76,7 @@
         </div>
       </div>
       <div class="mob-search">
-        <img src="./assets/img/search.webp" alt="Search">
+        <a class="mob-srch" id="mob-srch"><img src="./assets/img/search.webp" alt="Search"></a>
       </div>
     </div>
 
@@ -92,45 +106,45 @@
     </div>
   </nav>
 
-      <!-- Mobile menu -->
-      <div class="mobile-menu d-none" id="mobile-menu">
-        <div class="location-mobile">
-          <div class="where-icon">
-            <img src="./assets/img/locationIcon.png" alt="Location icon" />
-            <p>Gde se nalaze naši proizvodi?</p>
-          </div>
-          <div class="places-mobile">
-            <p><strong>Beograd</strong></p>
-          </div>
-        </div>
-        <div class="header-end-mobile">
-          <div class="wish-list-mobile">
-            <img src="./assets//img/heartIcon.png" alt="Heart Icon for wish list" />
-            <a href="#">Lista želja (0)</a>
-          </div>
-          <div class="cart-list-mobile">
-            <img src="./assets//img/cartIcon.png" alt="Basket Icon for cart" />
-            <a href="#">Korpa (0)</a>
-          </div>
-        </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu d-none" id="mobile-menu">
+    <div class="location-mobile">
+      <div class="where-icon">
+        <img src="./assets/img/locationIcon.png" alt="Location icon" />
+        <p>Gde se nalaze naši proizvodi?</p>
       </div>
+      <div class="places-mobile">
+        <p><strong>Beograd</strong></p>
+      </div>
+    </div>
+    <div class="header-end-mobile">
+      <div class="wish-list-mobile">
+        <img src="./assets//img/heartIcon.png" alt="Heart Icon for wish list" />
+        <a href="#">Lista želja (0)</a>
+      </div>
+      <div class="cart-list-mobile">
+        <img src="./assets//img/cartIcon.png" alt="Basket Icon for cart" />
+        <a href="#">Korpa (0)</a>
+      </div>
+    </div>
+  </div>
 
-      <div class="cat-mobile d-none" id="cat-mobile">
-        <ul class="navbar-mobile">
-          <li><a href="#">Najloni</a></li>
-          <li><a href="#">Udice</a></li>
-          <li><a href="#"> Štapovi</a></li>
-          <li><a href="#">Varalice</a></li>
-          <li><a href="#">Plovci</a></li>
-          <li><a href="#">Hrana i hranilice</a></li>
-          <li><a href="#">Oprema za noćno pecanje</a></li>
-        </ul>
-        <div class="btn-mob">
-          <button class="nav-btn-mobile">
-            Vidi sve kategorije
-          </button>
-        </div>
-      </div>
+  <div class="cat-mobile d-none" id="cat-mobile">
+    <ul class="navbar-mobile">
+      <li><a href="#">Najloni</a></li>
+      <li><a href="#">Udice</a></li>
+      <li><a href="#"> Štapovi</a></li>
+      <li><a href="#">Varalice</a></li>
+      <li><a href="#">Plovci</a></li>
+      <li><a href="#">Hrana i hranilice</a></li>
+      <li><a href="#">Oprema za noćno pecanje</a></li>
+    </ul>
+    <div class="btn-mob">
+      <button class="nav-btn-mobile">
+        Vidi sve kategorije
+      </button>
+    </div>
+  </div>
   <main>
     <div class="layout">
       <div class="main-img">
