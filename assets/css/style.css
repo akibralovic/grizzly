@@ -1045,6 +1045,9 @@ h3 span {
     display: none !important;
   }
 
+  .burger-menu{
+    cursor: pointer;
+  }
 /* Mobile menu */
 .mobile-menu{
   display: blocka;
