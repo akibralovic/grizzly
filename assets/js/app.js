@@ -53,6 +53,8 @@ const searchMenu = () => {
 
   const logo = document.getElementById('logo');
 
+  const magnifying = document.getElementById('mob-search')
+
 
 
   let active = true;
@@ -62,12 +64,15 @@ const searchMenu = () => {
     if(!active){
       srchDiv.classList.add('d-none')
       logo.classList.remove('d-none');
+      magnifying.classList.remove('d-none');
 
       return active = true;
     }
     if(active){
       srchDiv.classList.remove('d-none')
       logo.classList.add('d-none')
+      magnifying.classList.add('d-none');
+
 
       return active = false;
     }

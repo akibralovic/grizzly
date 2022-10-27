@@ -1052,7 +1052,7 @@ h3 span {
     display: flex;
     background: var(--layoutText-color);
     height: 40px;
-    width: 600px;
+    width: 1200px;
     min-width: 300px;
     border-radius: 5px;
     
@@ -1085,7 +1085,16 @@ h3 span {
 
   .burger-menu{
     cursor: pointer;
+    padding-right: 20px;
   }
+
+  .mob-search{
+    padding-left: 20px;
+  }
+  
+
+
+
 /* Mobile menu */
 .mobile-menu{
   display: block;
@@ -1394,7 +1403,12 @@ color: var(--layoutText-color);
     padding-top: 40px;
     min-width: 320px;
   }
-
+  .burger-menu{
+    padding-right: 10px;
+  }
+.mob-search{
+  padding-left: 10px;
+}
   .search-mobile
 {
 height: 33px;
