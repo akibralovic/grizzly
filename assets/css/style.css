@@ -853,7 +853,6 @@ flex-direction: column;
   color: var(--layoutText-color);
   font-weight: 700;
   font-size: 15px;
-  line-height: 20px;
   background: var(--button-color);
   border: none;
   height: 40px;
@@ -861,11 +860,21 @@ flex-direction: column;
 
 }
 
+.cat-hover{
+  display: none;;
+}
 
 .cat-hover button:hover{
   background: var(--hover-color);
   color: var(--layoutText-color);
 }
+
+
+.cat-desc:hover + .cat-hover{
+  display: block;
+  color: white
+}
+
 
 /* Sponsors */
 
