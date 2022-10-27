@@ -729,41 +729,104 @@ h3 span {
 
 .categories h2 {
   padding-bottom: 30px;
+  display: flex;
 }
 
 .categories-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px 20px;
+  width: 100%;
 }
 
 .categories1 {
-  position: relative;
-  min-width: 280px;
+  display: flex;
+  background-image: url("../img/cat/najloni.webp") ;
+  height: 200px;
+  background-position: center;
+  width:100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  }
+  
+
+.categories2 {
+display: flex;
+background-image: url("../img/cat/udice.webp") ;
+height: 200px;
+background-position: center;
+width:100%;
+cursor: pointer;
+justify-content: center;
+align-items: center;
 }
 
-.categories1 img {
-  width: 100%;
+.categories3{
+  display: flex;
+  background-image: url("../img/cat/stapovi.webp") ;
+  height: 200px;
+  background-position: center;
+  width:100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.categories4{
+  display: flex;
+  background-image: url("../img/cat/varalice.webp") ;
+  height: 200px;
+  background-position: center;
+  width:100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
-.categories1 a {
-  position: absolute;
-  top: 43%;
-  left: 43%;
-  color: var(--layoutText-color);
+.categories5{
+  display: flex;
+  background-image: url("../img/cat/meredov.webp") ;
+  height: 200px;
+  background-position: center;
+  width:100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories6{
+  display: flex;
+  background-image: url("../img/cat/masinice.webp") ;
+  height: 200px;
+  background-position: center;
+  width:100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories1 a,
+.categories2 a,
+.categories3 a,
+.categories4 a,
+.categories5 a,
+.categories6 a {
   text-decoration: none;
-  width: 100%;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 23px;
+  color: var(--layoutText-color);
 }
 
 /* Sponsors */
+
+.partners{
+  display: flex;
+  padding-top: 30px;
+}
+
 .sponsors {
   display: grid;
   grid-template-columns:
     auto auto auto auto auto;
-  padding-top: 100px;
+  padding-top: 50px;
   gap: 150px;
   height: 150px;
   padding-right: 40px;
@@ -1002,7 +1065,8 @@ h3 span {
   .slides,
   .mobile-menu,
   .cat-mobile,
-  .search-mobile{
+  .search-mobile,
+  .show{
     display: none;
   }
 
@@ -1289,23 +1353,35 @@ color: var(--layoutText-color);
   /* Categories */
 
   .categories {
-
-    display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
   }
-
   .categories-grid {
     display: grid;
     grid: "auto auto";
     width: 1;
   }
 
+  .show{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
 
 
 
   /* Sponsors */
+
+  .partners{
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+  }
+  
+
+
   .sponsors {
     display: flex;
     flex-basis: 40%;
@@ -1574,7 +1650,59 @@ padding-right: 9px;
 
   /* Categories */
 
-  .categories {
+  .categories{
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categories-grid{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .categories1{
+    display: flex;
+    background-image: url("../img/najloni-mob.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .categories2{
+    display: flex;
+    background-image: url("../img/udice-mob.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .categories3{
+    display: flex;
+    background-image: url("../img/stapovi-mob.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .categories4{
+    display: flex;
+    background-image: url("../img/varalice-mob.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .categories5{
+    display: flex;
+    background-image: url("../img/meredov-mob.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .categories6{
+    display: flex;
+    background-image: url("../img/masinice-mob.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* .categories {
     display: flex;
     align-items: stretch;
    }
@@ -1605,8 +1733,10 @@ padding-right: 9px;
 position: absolute;
 left: 0;
 font-size: 20px;
-  }
+  } */
 
+
+  
 .about-form{
   min-width: 320px;
 }
