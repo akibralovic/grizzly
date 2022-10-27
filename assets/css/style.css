@@ -748,6 +748,7 @@ h3 span {
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   }
   
 
@@ -760,6 +761,8 @@ width:100%;
 cursor: pointer;
 justify-content: center;
 align-items: center;
+flex-direction: column;
+
 }
 
 .categories3{
@@ -771,6 +774,8 @@ align-items: center;
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
 }
 .categories4{
   display: flex;
@@ -781,6 +786,8 @@ align-items: center;
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
 }
 
 .categories5{
@@ -792,6 +799,8 @@ align-items: center;
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
 }
 
 .categories6{
@@ -803,6 +812,8 @@ align-items: center;
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
 }
 
 .categories1 a,
@@ -812,6 +823,47 @@ align-items: center;
 .categories5 a,
 .categories6 a {
   text-decoration: none;
+  color: var(--layoutText-color);
+}
+
+.cat-hover{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  color: var(--layoutText-color);
+}
+.cat-hover p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 23px;
+}
+
+.cat-hover button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  color: var(--layoutText-color);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  background: var(--button-color);
+  border: none;
+  height: 40px;
+  cursor: pointer;
+
+}
+
+
+.cat-hover button:hover{
+  background: var(--hover-color);
   color: var(--layoutText-color);
 }
 
