@@ -49,5 +49,6 @@ const catMenu = () => {
 
 window.addEventListener('DOMContentLoaded', (event) => {
   //funkciju pozivamo tek kada se dom ucita, kako se ne bi desilo da se ona pozove a brauzer jos uvek nije formirao dom element
-  phoneMenu()
+  phoneMenu();
+  catMenu();
 })
