@@ -51,17 +51,23 @@ const searchMenu = () => {
   const srchMenu = document.getElementById('mob-srch');
   const srchDiv = document.getElementById('search-mobile');
 
+  const logo = document.getElementById('logo');
+
+
+
   let active = true;
   console.log('radi')
 
   srchMenu.addEventListener('click', () =>{
     if(!active){
       srchDiv.classList.add('d-none')
+      logo.classList.remove('d-none');
 
       return active = true;
     }
     if(active){
       srchDiv.classList.remove('d-none')
+      logo.classList.add('d-none')
 
       return active = false;
     }
