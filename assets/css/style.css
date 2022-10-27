@@ -1053,11 +1053,11 @@ h3 span {
   display: block;
   flex-direction: column;
   background-color: var(--header-color);
-  padding-left: var(--tablet-margine);
   padding-right: var(--tablet-margine);
   color: var(--layoutText-color);
 position: absolute;
-width: -webkit-fill-available;
+width: 100%;
+justify-content: center;
 }
 .location-mobile{
   display: flex;
@@ -1090,12 +1090,12 @@ color: var(--layoutText-color);
 /* Nav mobile */
 .cat-mobile{
   display: block;
-  padding-left: var(--tablet-margine);
   padding-right: var(--tablet-margine);
   flex-direction: column;
   background: var(--button-color);
   position: absolute;
-/* width: -webkit-fill-available; */
+width: 100%;
+justify-content: center;
 }
 .navbar-mobile{
   display: flex;
