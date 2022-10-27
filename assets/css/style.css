@@ -584,7 +584,6 @@ main {
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-  min-width: 130px;
 }
 
 .art-btn {
@@ -632,6 +631,7 @@ main {
   flex-direction: row;
   justify-content: center;
   height: 130px;
+  min-width: 120px;
 }
 
 .art-img .percentage {
@@ -1331,9 +1331,24 @@ color: var(--layoutText-color);
     padding-top: 120px;
   }
 
-  #art4,#art5,#art6{
+  .articles{
+    display: flex;
+  }
+  .main-container{
+    overflow-x: scroll;
+  }
+  .main-container::-webkit-scrollbar {
     display: none;
   }
+
+  .main-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* #art4,#art5,#art6{
+    display: none;
+  } */
 
   .slides {
     display: flex;
@@ -1363,6 +1378,14 @@ color: var(--layoutText-color);
     width: 1;
   }
 
+ .categories1,
+ .categories2,
+ .categories3,
+ .categories4,
+ .categories5,
+ .categories6{
+  background-size: cover;
+ }
   .show{
     display: flex;
     justify-content: center;
@@ -1598,32 +1621,22 @@ padding-right: 9px;
   }
 
   /* Articles */
-  .article1 {
-    display: none;
-    font-size: 20px;
-  }
-
   .articles {
     display: flex;
     padding-left: var(--phone-margine);
     padding-right: var(--phone-margine);
-  }
-
-  .article1:first-child {
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .art-img {
-    display: flex;
-    width: 300px;
-    height: 100%;
+    gap: 18px;
 
   }
 
-  .art-img img {}
+  .article1{
+display: flex;
+    width: 360px;
+    font-size: 20px;
+
+  }
+
+
 
   .art-btn button {
     width: 223px;
@@ -1652,9 +1665,11 @@ padding-right: 9px;
 
   .categories{
     align-items: stretch;
-    width: 100%;
+    width: 92%;
     justify-content: center;
     align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   .categories-grid{
@@ -1701,39 +1716,6 @@ padding-right: 9px;
     background-position: center;
     background-size: cover;
   }
-
-  /* .categories {
-    display: flex;
-    align-items: stretch;
-   }
-
-  .categories-grid {
-    display: flex;
-    flex-direction: column;
-    width: 1;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .categories h2 {
-    display: flex;
-    justify-content: center;
-  }
-  .categories a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top:10px;
-  }
-  .categories1 a{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-position: absolute;
-left: 0;
-font-size: 20px;
-  } */
 
 
   
