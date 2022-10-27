@@ -42,6 +42,11 @@ body {
   overflow-x: hidden;
 }
 
+/*klasa koju koristi js kada nesto sakrivamo ili prikazujemo*/
+.d-none{
+  display: none !important;
+}
+
 /* Header start */
 .header-container {
   display: flex;
@@ -995,7 +1000,8 @@ h3 span {
   .mob-menu,
   .mob-search,
   .slides,
-  .mobile-menu{
+  .mobile-menu,
+  .cat-mobile{
     display: none;
   }
 
@@ -1074,6 +1080,57 @@ padding-top: 30px;
 .header-end-mobile a{
   text-decoration: none;
 color: var(--layoutText-color);
+}
+
+
+/* Nav mobile */
+.cat-mobile{
+  display: block;
+  padding-left: var(--tablet-margine);
+  padding-right: var(--tablet-margine);
+  flex-direction: column;
+  background: var(--button-color);
+}
+.navbar-mobile{
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.navbar-mobile li{
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.navbar-mobile a {
+  color: var(--layoutText-color);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-mob{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-btn-mobile{
+  display: flex;
+  height: 40px;
+  width: 223px;
+cursor: pointer;
+font-weight: 700;
+justify-content: center;
+align-items: center;
+color: var(--layoutText-color);
+  background:none;
+  border: 2px solid;
+  border-color: var(--layoutText-color);
+  border-radius: 3px;
 }
 
 
