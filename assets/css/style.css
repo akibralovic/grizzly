@@ -997,11 +997,11 @@ flex-direction: column;
 
 .form-input {
   padding-top: 27px;
-  width: fit-content;
+  width: 100%;
 }
 
 .form-info input {
-  display: flex;
+  /* display: flex; */
   padding: 10px;
   /* width: 100%; */
 }
@@ -1147,7 +1147,6 @@ width: 100%;
   }
 
 }
-
 
 
 
@@ -1521,11 +1520,6 @@ color: var(--layoutText-color);
 
   }
 
-  /* .form-input input{
-    display: flex;
-    width: 100%;
-  } */
-
   .form-btn {
     display: flex;
     justify-content: center;
@@ -1561,9 +1555,18 @@ color: var(--layoutText-color);
 
 
 
+@media only screen and (min-width: 800px){
+  .form-info input{
+    display: flex;
+    width: 100% !important;
+    max-width: 540px;
+  }
 
-
-
+  /* .name-surname input{
+    display: flex;
+    width: 100%;
+  } */
+}
 
 
 
