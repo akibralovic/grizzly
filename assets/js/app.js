@@ -79,9 +79,34 @@ const searchMenu = () => {
   })
 }
 
+//sakriva ili prikazuje sadrzaj kartice na hover
+function showCardContent(){
+  //pristupam svim elementima koji imaju klasu .cat-desc, to su u ovom slucaju naslovi u kartici categories
+const categories=Array.from(document.querySelectorAll('.cat-desc'));
+
+//funkcija koja uklanja klasu d-none kada strelica udje u polje kartice
+const removeHidden = (e)=>{
+  //upitnik proverava da li objekat sadrzi kljuc pre nego sto nad njim izvrsi metodu
+  e.target.querySelector('.cat-hover')?.classList.remove('d-none')
+}
+
+//funkcija koja dodaje klasu d-none kada strelica izadje is polja kartice
+const addHidden=(e)=>{
+  e.target.querySelector('.cat-hover')?.classList.add('d-none')
+
+}
+//posto imam niz sastavljen od naslova koji se nalaze u karticama, kartici pristupam kao roditelju
+//
+categories.forEach(category=>{
+category.parentElement.addEventListener('mouseover',removeHidden)
+category.parentElement.addEventListener('mouseleave',addHidden)
+
+})
+}
 window.addEventListener('DOMContentLoaded', (event) => {
   //funkciju pozivamo tek kada se dom ucita, kako se ne bi desilo da se ona pozove a brauzer jos uvek nije formirao dom element
   phoneMenu();
   catMenu();
   searchMenu();
+  showCardContent();
 })
