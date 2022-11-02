@@ -582,10 +582,11 @@ main {
   display: flex;
   border: 1px solid #e4e4e4;
   height: 100%;
-  width: fit-content;
+  width: 100%;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  /* min-width: 220px; */
 }
 
 .art-btn {
@@ -1696,24 +1697,31 @@ padding-right: 9px;
   }
 
   /* Articles */
-  .articles {
+  /* .articles {
     display: flex;
     padding-left: var(--phone-margine);
     padding-right: var(--phone-margine);
     gap: 18px;
+width: 100%;
+  }
 
+  .articles .article1{
+    width: 100%;
   }
 
   .article1{
-display: flex;
-    width: 360px;
+    display: flex;
+    align-content: stretch;
     font-size: 20px;
 
+  } */
+  .article1{
+    display: none;
   }
 
 
 
-  .art-btn button {
+  /* .art-btn button {
     width: 223px;
   }
 
@@ -1733,7 +1741,7 @@ display: flex;
   .slides {
     padding-left: var(--phone-margine);
     padding-right: var(--phone-margine);
-  }
+  } */
 
 
   /* Categories */
