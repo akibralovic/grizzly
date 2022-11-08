@@ -60,7 +60,7 @@ body {
 }
 
 .logo {
-  width: 180px;
+  /* width: 180px; */
   height: 38px;
   display: flex;
   align-items: center;
@@ -68,9 +68,26 @@ body {
   cursor: pointer;
 }
 
+.nav-search{
+  display: flex;
+width: 140%;
+padding-left: 120px;
+justify-content: right;
+
+}
+
+.nav-btn{
+  display: flex;
+  justify-content: flex-end;
+width: 50%;
+min-width: 150px;
+}
 .search {
-  margin-left: 120px;
-  width: 700px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 100%;
+
 }
 
 .container-block {
@@ -78,11 +95,13 @@ body {
 
   background: var(--layoutText-color);
   height: 50px;
-  width: 650px;
+  width: 100%;
   border-radius: 5px;
-  float: right;
 }
-
+.nav-input{
+  display: flex;
+  width: 100%;
+}
 .search img {
   width: 21px;
   height: 21px;
@@ -229,19 +248,26 @@ body {
   align-items: center;
   display: flex;
   width: 142px;
-  min-width: 126px;
+  min-width: 112px;
 }
 
 .nav-start a,
 .nav-end a {
   color: var(--layoutText-color);
 }
+.nav-ul{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-left: 42px;
+  width: 110%;
+}
 
 .navbar {
   display: flex;
-  align-items: center;
   gap: 42px;
-  margin-left: 115px;
+  flex-direction: row;
+
 }
 
 .navbar li {
@@ -1105,6 +1131,28 @@ h3 span {
   }
 }
 
+@media only screen and (max-width: 1650px) and (min-width: 1300px) {
+
+  .nav-ul{
+    /* padding-left: 20px; */
+    justify-content: left;
+
+  }
+  .navbar{
+    gap: 20px;
+  }
+  .search button{
+    width: 85%;
+  }
+  .nav-end{
+    padding-left: 20px;
+
+  }
+  .nav-search{
+    padding-left: 40px;
+}
+}
+
 @media only screen and (max-width: 1300px) {
   .header-container {
     padding-left: var(--tablet-margine);
@@ -1118,7 +1166,9 @@ h3 span {
   .location,
   .header-end,
   .navbar,
-  .nav-end {
+  .nav-end,
+  .nav-search,
+  .nav-ul{
     display: none !important;
   }
 
