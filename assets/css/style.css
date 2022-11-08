@@ -68,26 +68,24 @@ body {
   cursor: pointer;
 }
 
-.nav-search{
+.nav-search {
   display: flex;
-width: 140%;
-padding-left: 120px;
-justify-content: right;
-
+  width: 140%;
+  padding-left: 120px;
+  justify-content: right;
 }
 
-.nav-btn{
+.nav-btn {
   display: flex;
   justify-content: flex-end;
-width: 50%;
-min-width: 150px;
+  width: 50%;
+  min-width: 150px;
 }
 .search {
   display: flex;
   align-items: right;
   justify-content: right;
   width: 100%;
-
 }
 
 .container-block {
@@ -98,7 +96,7 @@ min-width: 150px;
   width: 100%;
   border-radius: 5px;
 }
-.nav-input{
+.nav-input {
   display: flex;
   width: 100%;
 }
@@ -255,7 +253,7 @@ min-width: 150px;
 .nav-end a {
   color: var(--layoutText-color);
 }
-.nav-ul{
+.nav-ul {
   display: flex;
   align-items: center;
   justify-content: right;
@@ -267,7 +265,6 @@ min-width: 150px;
   display: flex;
   gap: 42px;
   flex-direction: row;
-
 }
 
 .navbar li {
@@ -896,22 +893,25 @@ h3 span {
 
 .partners {
   display: flex;
-  padding-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
+
 
 .sponsors {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  padding-top: 50px;
-  gap: 150px;
-  height: 150px;
-  padding-right: 40px;
+  display: flex;
+  flex-basis: 40%;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+  height: fit-content;
+justify-content: space-evenly;
+}
+.sponsors img{
+  padding: 10px;
 }
 
-.sponsors img {
-  min-width: 100px;
-  cursor: pointer;
-}
 
 .sponsors img:hover {
   transform: scale(1.1);
@@ -929,14 +929,14 @@ h3 span {
   display: flex;
   flex-direction: column;
   width: 50%;
-  min-width: 600px;
+  /* min-width: 600px; */
 }
 
 .about {
   display: flex;
-  padding: 20px;
+  padding-right: 20px;
   flex-direction: column;
-  min-width: 400px;
+  /* min-width: 400px; */
 }
 
 .about h2 {
@@ -948,7 +948,7 @@ h3 span {
 
 .about-paragraph {
   display: flex;
-  min-width: 120px;
+  /* min-width: 120px; */
 }
 
 .about p {
@@ -984,7 +984,8 @@ h3 span {
 .form-info {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .form-info h2 {
@@ -1068,9 +1069,7 @@ h3 span {
   flex-direction: row;
   width: 50%;
   gap: 20px;
-  min-width: 600px;
   padding-top: 20px;
-  padding-left: 40px;
   justify-content: right;
 }
 
@@ -1132,25 +1131,27 @@ h3 span {
 }
 
 @media only screen and (max-width: 1650px) and (min-width: 1300px) {
-
-  .nav-ul{
+  .nav-ul {
     /* padding-left: 20px; */
     justify-content: left;
-
   }
-  .navbar{
+  .navbar {
     gap: 20px;
   }
-  .search button{
+  .search button {
     width: 85%;
   }
-  .nav-end{
+  .nav-end {
     padding-left: 20px;
+  }
+  .nav-search {
+    padding-left: 40px;
+  }
+  .group-of-img{
+    align-items: center;
+    align-self: stretch;
 
   }
-  .nav-search{
-    padding-left: 40px;
-}
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1168,7 +1169,7 @@ h3 span {
   .navbar,
   .nav-end,
   .nav-search,
-  .nav-ul{
+  .nav-ul {
     display: none !important;
   }
 
@@ -1216,7 +1217,7 @@ h3 span {
     padding-left: 20px;
   }
 
-  /* Mobile menu */
+  /* Mobile menu  max-width: 1300px*/
   .mobile-menu {
     display: block;
     flex-direction: column;
@@ -1254,7 +1255,7 @@ h3 span {
     color: var(--layoutText-color);
   }
 
-  /* Nav mobile */
+  /* Nav mobile  max-width: 1300px*/
   .cat-mobile {
     display: block;
     padding-right: var(--tablet-margine);
@@ -1414,7 +1415,7 @@ h3 span {
     color: var(--sortText-color);
   }
 
-  /* Categories */
+  /* Categories  max-width: 1300px*/
 
   .categories {
     justify-content: center;
@@ -1440,25 +1441,15 @@ h3 span {
     padding-top: 10px;
   }
 
-  /* Sponsors */
+  /* Sponsors  max-width: 1300px*/
 
   .partners {
     display: flex;
-    padding-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     justify-content: center;
   }
 
-  .sponsors {
-    display: flex;
-    flex-basis: 40%;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    padding-bottom: 180px;
-    flex-wrap: wrap;
-    height: fit-content;
-  }
 
   /* Info */
   .contact {
