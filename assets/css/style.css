@@ -578,24 +578,31 @@ main {
 
 /* Artikli */
 
-.main-container {
-  margin-top: 27px;
+/* .main-container {
   display: flex;
+  padding-top: 27px;
   width: 100%;
-}
+} */
 
 .articles {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  width: 20%;
   gap: 18px;
 }
+
+/* .articles{
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+gap: 18px;
+
+} */
 
 .article1 {
   display: flex;
   border: 1px solid #e4e4e4;
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
@@ -897,7 +904,6 @@ h3 span {
   padding-bottom: 30px;
 }
 
-
 .sponsors {
   display: flex;
   flex-basis: 40%;
@@ -906,12 +912,11 @@ h3 span {
   padding-bottom: 60px;
   flex-wrap: wrap;
   height: fit-content;
-justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-.sponsors img{
+.sponsors img {
   padding: 10px;
 }
-
 
 .sponsors img:hover {
   transform: scale(1.1);
@@ -1147,10 +1152,9 @@ justify-content: space-evenly;
   .nav-search {
     padding-left: 40px;
   }
-  .group-of-img{
+  .group-of-img {
     align-items: center;
     align-self: stretch;
-
   }
 }
 
@@ -1449,7 +1453,6 @@ justify-content: space-evenly;
     padding-bottom: 30px;
     justify-content: center;
   }
-
 
   /* Info */
   .contact {
