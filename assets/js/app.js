@@ -58,7 +58,7 @@ const searchMenu = () => {
 
 
   let active = true;
-  console.log('radi')
+  console.log('ide gaaas')
 
   srchMenu.addEventListener('click', () =>{
     if(!active){
