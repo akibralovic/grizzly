@@ -324,6 +324,9 @@ main {
   cursor: pointer;
   justify-content: center;
 }
+.first-row:hover{
+  opacity: 0.9;
+}
 
 .second-row {
   grid-area: second;
@@ -336,6 +339,9 @@ main {
   cursor: pointer;
   justify-content: center;
 }
+.second-row:hover{
+  opacity: 0.9;
+}
 
 .third-row {
   grid-area: third;
@@ -347,6 +353,9 @@ main {
   height: 200px;
   cursor: pointer;
   justify-content: center;
+}
+.third-row:hover{
+  opacity: 0.9;
 }
 
 .main-header h1 {
@@ -1358,12 +1367,12 @@ h3 span {
 
   .layout {
     margin-top: 30px;
-    gap: 10px 0px;
-    grid-template-areas:
+    gap: 10px 10px;
+    /* grid-template-areas:
       "main"
       "first"
       "second"
-      "third";
+      "third"; */
   }
 
   .main-img {
