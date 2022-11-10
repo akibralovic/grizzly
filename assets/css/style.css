@@ -1094,15 +1094,13 @@ h3 span {
 /* Footer */
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;
-  background-color: var(--footer-color);
-  color: var(--header-color);
-  text-transform: uppercase;
+  background-color: var(--header-color);
+  color: var(--layoutText-color);
   height: 374px;
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 25px;
 }
@@ -1119,9 +1117,6 @@ h3 span {
     display: none;
   }
 
-  .footer img {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 1650px) and (min-width: 1300px) {
