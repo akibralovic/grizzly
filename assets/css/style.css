@@ -596,7 +596,6 @@ main {
   grid-template-columns: repeat(6, auto);
   width: 100%;
   gap: 18px;
-  justify-content: space-evenly;
 }
 
 
@@ -730,7 +729,7 @@ main {
   min-width: 140px;
   height: 160px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 20px;
   padding-top: 20px;
 }
