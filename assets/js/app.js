@@ -103,10 +103,23 @@ category.parentElement.addEventListener('mouseleave',addHidden)
 
 })
 }
+
+
+function getYear(){
+  const year = document.getElementById('year');
+  const currentYear = new Date().getFullYear();
+  console.log(currentYear);
+
+  year.innerText = currentYear;
+}
+
+
+
 window.addEventListener('DOMContentLoaded', (event) => {
   //funkciju pozivamo tek kada se dom ucita, kako se ne bi desilo da se ona pozove a brauzer jos uvek nije formirao dom element
   phoneMenu();
   catMenu();
   searchMenu();
   showCardContent();
+  getYear();
 })
