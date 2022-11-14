@@ -385,7 +385,8 @@ main {
   cursor: pointer;
 }
 
-.layout-btn button {
+.layout-btn a {
+  display: flex;
   margin-top: 20px;
   width: 184px;
   height: 40px;
@@ -395,11 +396,14 @@ main {
   font-size: 15px;
   line-height: 20px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   box-sizing: content-box;
   border: none;
+  text-decoration: none;
 }
 
-.layout-btn button:hover {
+.layout-btn a:hover {
   background: var(--hover-color);
 }
 
@@ -1149,6 +1153,39 @@ h3 span {
   text-align: right;
   font-style: italic;
 }
+
+.footer a{
+  text-decoration: none;
+  color: var(--footer-color);
+}
+
+
+
+
+/* Second Page */
+
+.main-articles{
+  padding: var(--desktop-margine);
+}
+
+.art-desc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Responsive*/
 @media only screen and (min-width: 1300px) {
