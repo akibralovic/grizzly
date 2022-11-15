@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Grizzly, pecanje" />
-  <meta name="description" content="Production of floats" />
-  <meta name="robots" content="noindex, nofollow" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Grizzly, pecanje" />
+    <meta name="description" content="Production of floats" />
+    <meta name="robots" content="noindex, nofollow" />
 
-  <meta property="og:title" content="Grizzly" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://grizzly-sport.com/" />
-  <meta property="og:image" content="https://grizzly-sport.com/assets/img/logo.webp" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="Grizzly link image" />
-  <meta property="og:description" content="Production of floats" />
-  <meta name="author" content="Andjela Bralovic">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet" />
-  <title>Grizzly</title>
-</head>
-<body>
-  <header>
-    <div class="header-container">
-      <div class="mob-menu">
-        <a class="burger-menu" id="burger-menu"><img src="./assets/img/mob-menu.png" alt="Mobile menu"></a>
-      </div>
-      <div class="logo" id="logo">
-        <img src="./assets/img/logo.png" alt="Logo Grizzly" />
-      </div>
-      <div class="nav-search">
-        <div class="search">
-          <div class="container-block">
-            <img src="./assets/img/searchIcon.png" alt="Search icon" />
-            <div class="nav-input">
-              <input type="text" name="Search" id="search"
-                placeholder="Pretraži po kategoriji, ključnim rečima ili konkretnim nazivom željenog proizvoda" />
+    <meta property="og:title" content="Grizzly" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grizzly-sport.com/" />
+    <meta
+      property="og:image"
+      content="https://grizzly-sport.com/assets/img/logo.webp"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Grizzly link image" />
+    <meta property="og:description" content="Production of floats" />
+    <meta name="author" content="Andjela Bralovic" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Grizzly</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="mob-menu">
+          <a class="burger-menu" id="burger-menu"
+            ><img src="./assets/img/mob-menu.png" alt="Mobile menu"
+          /></a>
+        </div>
+        <div class="logo" id="logo">
+          <a href="index.html"><img src="./assets/img/logo.png" alt="Logo Grizzly" /></a>
+        </div>
+        <div class="nav-search">
+          <div class="search">
+            <div class="container-block">
+              <img src="./assets/img/searchIcon.png" alt="Search icon" />
+              <div class="nav-input">
+                <input
+                  type="text"
+                  name="Search"
+                  id="search"
+                  placeholder="Pretraži po kategoriji, ključnim rečima ili konkretnim nazivom željenog proizvoda"
+                />
+              </div>
+              <div class="nav-btn"><button>Pretraži</button></div>
             </div>
-            <div class="nav-btn"><button>Pretraži</button></div>
           </div>
         </div>
-      </div>
 
+        <!-- Mobile search -->
+        <div class="search-mobile d-none" id="search-mobile">
+          <dic class="search-input-mob">
+            <input
+              type="text"
+              name=""
+              id="search-mob"
+              placeholder="Pretraži po kategoriji, ključnim rečima ili konkretnim nazivom željenog proizvoda"
+            />
+          </dic>
+          <div class="search-img-mob">
+            <a href="">
+              <img src="./assets/img/searchIcon.png" alt="Search icon" />
+            </a>
+            <a href="">
+              <img src="./assets/img/cancel-btn.png" alt="Cancel" />
+            </a>
+          </div>
+        </div>
 
-
-      <!-- Mobile search -->
-      <div class="search-mobile d-none" id="search-mobile">
-        <dic class="search-input-mob">
-          <input type="text" name="" id="search-mob"
-            placeholder="Pretraži po kategoriji, ključnim rečima ili konkretnim nazivom željenog proizvoda" />
-        </dic>
-        <div class="search-img-mob">
-          <a href="">
-            <img src="./assets/img/searchIcon.png" alt="Search icon" />
-          </a>
-          <a href="">
-            <img src="./assets/img/cancel-btn.png" alt="Cancel">
-          </a>
+        <div class="location">
+          <img src="./assets/img/locationIcon.png" alt="Location icon" />
+          <p>Gde se nalaze naši proizvodi?</p>
+          <div class="places">
+            <p><strong>Beograd</strong></p>
+          </div>
+        </div>
+        <div class="header-end">
+          <div class="wish-list">
+            <img
+              src="./assets//img/heartIcon.png"
+              alt="Heart Icon for wish list"
+            />
+            <a href="#">Lista želja (0)</a>
+          </div>
+          <div class="cart-list">
+            <img src="./assets//img/cartIcon.png" alt="Basket Icon for cart" />
+            <a href="#">Korpa (0)</a>
+          </div>
+        </div>
+        <div class="mob-search" id="mob-search">
+          <a class="mob-srch" id="mob-srch"
+            ><img src="./assets/img/search.webp" alt="Search"
+          /></a>
         </div>
       </div>
-
-
-      <div class="location">
-        <img src="./assets/img/locationIcon.png" alt="Location icon" />
-        <p>Gde se nalaze naši proizvodi?</p>
-        <div class="places">
-          <p><strong>Beograd</strong></p>
+    </header>
+    <nav>
+      <div class="nav-row">
+        <div class="nav-start">
+          <a href="index.html#categoris" class="cat-menu" id="cat-menu"
+            ><strong>Katalog 2021/2022</strong></a
+          >
         </div>
-      </div>
-      <div class="header-end">
-        <div class="wish-list">
-          <img src="./assets//img/heartIcon.png" alt="Heart Icon for wish list" />
-          <a href="#">Lista želja (0)</a>
-        </div>
-        <div class="cart-list">
-          <img src="./assets//img/cartIcon.png" alt="Basket Icon for cart" />
-          <a href="#">Korpa (0)</a>
-        </div>
-      </div>
-      <div class="mob-search" id="mob-search">
-        <a class="mob-srch" id="mob-srch"><img src="./assets/img/search.webp" alt="Search"></a>
-      </div>
-    </div>
-
-  </header>
-  <nav>
-    <div class="nav-row">
-      <div class="nav-start">
-        <a href="#categories" class="cat-menu" id="cat-menu"><strong>Katalog 2021/2022</strong></a>
-      </div>
-      <div class="nav-ul">
+        <div class="nav-ul">
           <ul class="navbar">
             <li><a href="#">Najloni</a></li>
             <li><a href="#">Udice</a></li>
@@ -103,26 +120,81 @@
             <li><a href="#">Hrana i hranilice</a></li>
             <li><a href="#">Oprema za noćno pecanje</a></li>
           </ul>
+        </div>
+        <div class="nav-end">
+          <a href="#">
+            <strong
+              >Ukoliko imate dodatnih pitanja, kontaktirajte nas putem
+              forme</strong
+            >
+          </a>
+        </div>
       </div>
-      <div class="nav-end">
-        <a href="#">
-          <strong>Ukoliko imate dodatnih pitanja, kontaktirajte nas putem
-            forme</strong>
-        </a>
-      </div>
+    </nav>
 
+    <!-- Mobile menu -->
+    <div class="mobile-menu d-none" id="mobile-menu">
+      <div class="location-mobile">
+        <div class="where-icon">
+          <img src="./assets/img/locationIcon.png" alt="Location icon" />
+          <p>Gde se nalaze naši proizvodi?</p>
+        </div>
+        <div class="places-mobile">
+          <p><strong>Beograd</strong></p>
+        </div>
+      </div>
+      <div class="header-end-mobile">
+        <div class="wish-list-mobile">
+          <img
+            src="./assets//img/heartIcon.png"
+            alt="Heart Icon for wish list"
+          />
+          <a href="#">Lista želja (0)</a>
+        </div>
+        <div class="cart-list-mobile">
+          <img src="./assets//img/cartIcon.png" alt="Basket Icon for cart" />
+          <a href="#">Korpa (0)</a>
+        </div>
+      </div>
     </div>
-  </nav>
 
-  <div class="main-articles">
-    <h3>Plovci</h3>
-    <div class="art-desc">
-      <img src="./assets/img/artikli/plovka1.webp" alt="Plovka">
-      <div class="art-about">
-        <h1>Karbon</h1>
-        <p>Plovka <br>
-          Gramaža: 1, 1.5, 2, 2.5, 3</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga animi quibusdam earum, necessitatibus aut, voluptatibus voluptatum quo architecto dolores similique! Sint, ad? Officiis omnis sapiente veniam inventore odio ipsum, officia repellendus accusantium tempora possimus adipisci deleniti nesciunt ipsam explicabo quo, cupiditate quam doloremque molestiae, alias beatae dolorem aliquid. Voluptas necessitatibus enim totam quibusdam sint voluptatem architecto minima?</p>
+    <div class="cat-mobile d-none" id="cat-mobile">
+      <ul class="navbar-mobile">
+        <li><a href="#">Najloni</a></li>
+        <li><a href="#">Udice</a></li>
+        <li><a href="#"> Štapovi</a></li>
+        <li><a href="#">Varalice</a></li>
+        <li><a href="#">Plovci</a></li>
+        <li><a href="#">Hrana i hranilice</a></li>
+        <li><a href="#">Oprema za noćno pecanje</a></li>
+      </ul>
+      <div class="btn-mob">
+        <button class="nav-btn-mobile">Vidi sve kategorije</button>
+      </div>
+    </div>
+
+    <div class="main-articles">
+      <h3>Plovci</h3>
+      <div class="art-desc">
+        <div class="article-image">
+          <img src="./assets/img/artikli/plovka1.webp" alt="Plovka" />
+        </div>
+        <div class="art-about">
+          <h1>Karbon</h1>
+          <p>
+            Plovka <br />
+            Gramaža: 1, 1.5, 2, 2.5, 3
+          </p>
+          <p class="art-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            fuga animi quibusdam earum, necessitatibus aut, voluptatibus
+            voluptatum quo architecto dolores similique! Sint, ad? Officiis
+            omnis sapiente veniam inventore odio ipsum, officia repellendus
+            accusantium tempora possimus adipisci deleniti nesciunt ipsam
+            explicabo quo, cupiditate quam doloremque molestiae, alias beatae
+            dolorem aliquid. Voluptas necessitatibus enim totam quibusdam sint
+            voluptatem architecto minima?
+          </p>
           <div class="iconHeart">
             <img src="./assets/img/heartIcon.webp" alt="Heart Icon" />
             <p>Želi: <strong>127 posetilaca</strong></p>
@@ -131,50 +203,54 @@
             <img src="./assets/img/cartIcon1.webp" alt="Cart Icon" />
             <p>Kupilo: <strong>19 posetilaca</strong></p>
           </div>
-          <h3><span><s>3.999,99 RSD</s> </span><br>
-            2.999,99 RSD</h3>
+          <h3>
+            <span><s>3.999,99 RSD</s> </span><br />
+            2.999,99 RSD
+          </h3>
           <div class="art-btn">
             <button>Dodaj u korpu</button>
             <br />
             <button>Dodaj na listu želja</button>
           </div>
+        </div>
       </div>
     </div>
-  
-  </div>
 
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-nav">
-        <ul>
-          <li><a href="">Katalog</a></li>
-          <li><a href="">Najloni</a></li>
-          <li><a href="">Udice</a></li>
-          <li><a href="">Stapovi</a></li>
-          <li><a href="">Varalice</a></li>
-          <li><a href="">Plovci</a></li>
-          <li><a href="">Hrana i hranilice</a></li>
-          <li><a href="">Oprema za nocno pecanje</a></li>
-        </ul>
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="">Katalog</a></li>
+            <li><a href="">Najloni</a></li>
+            <li><a href="">Udice</a></li>
+            <li><a href="">Stapovi</a></li>
+            <li><a href="">Varalice</a></li>
+            <li><a href="">Plovci</a></li>
+            <li><a href="">Hrana i hranilice</a></li>
+            <li><a href="">Oprema za nocno pecanje</a></li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <a href="#"
+            ><img src="./assets/img/grizzly-logo-media.webp" alt="Grizzly logo"
+          /></a>
+        </div>
+        <div class="footer-info">
+          <address>
+            Grizzly Sport d.o.o. <br />
+            Kneginje Milice 140 <br />
+            35000 Jagodina, Srbija <br />
+            PIB 111536732
+          </address>
+        </div>
       </div>
-      <div class="footer-logo"><a href="#"><img src="./assets/img/grizzly-logo-media.webp" alt="Grizzly logo"></a></div>
-      <div class="footer-info">
-        <address>
-          Grizzly Sport d.o.o. <br>
-          Kneginje Milice 140 <br>
-          35000 Jagodina, Srbija <br>
-          PIB 111536732
-        </address>
+      <div>
+        <p>&copy; <span id="year"></span></p>
       </div>
-    </div>
-    <div>
-      <p>&copy; <span id="year"></span></p>
-    </div>
+    </footer>
 
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="./assets/js/app.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
