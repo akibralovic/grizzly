@@ -1247,21 +1247,31 @@ margin-top: 20px;
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
-  gap: 18px;
+  gap: 20px;
   justify-content: center;
   padding-top: 15px;
+
 }
 
 .comm{
   display: flex;
   flex-direction: column;
-  border: #2e2e2e solid 2px;
-  width: 100%;
+  border: 1px solid #e4e4e4;
+  width: 97%;
+  padding: 10px;
 }
 
 .comm img{
   display: flex;
   width: 7%
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .similar-art{
