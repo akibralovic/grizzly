@@ -1901,4 +1901,8 @@ width: 100%;
   justify-content: center;
 }
 
+.art-details{
+  min-width: none;
+}
+
 }
