@@ -1181,11 +1181,12 @@ h3 span {
   flex-direction: column;
   gap: 20px;
   justify-content: center;
+  width: 100%;
 }
 
 .art-details{
   display: flex;
-  min-width: 400px;
+  width: 100%;
 }
 
 .article-image{
@@ -1901,7 +1902,7 @@ width: 100%;
 }
 
 .art-details{
-  min-width: 320px !important;
+
 }
 
 }
