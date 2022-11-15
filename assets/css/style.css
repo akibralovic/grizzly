@@ -1244,6 +1244,19 @@ margin-top: 20px;
   background: var(--layoutHover-color);
 }
 
+.group-img-art{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.group-img-art img{
+  display: flex;
+  width: 15%;
+  border: 1px solid #e4e4e4;
+}
+
 .comments{
   display: grid;
   grid-template-columns: auto auto;
