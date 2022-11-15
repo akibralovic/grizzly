@@ -1181,7 +1181,6 @@ h3 span {
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  align-self: flex-start;
 }
 
 .art-details{
@@ -1902,7 +1901,7 @@ width: 100%;
 }
 
 .art-details{
-  min-width: none;
+  min-width: 320px !important;
 }
 
 }
