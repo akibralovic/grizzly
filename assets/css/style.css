@@ -2084,7 +2084,10 @@ gap: 3%;
   background: var(--layoutHover-color);
 }
 
-
+.profile img{
+  display: flex;
+  width: 20%;
+}
 
 
 }
