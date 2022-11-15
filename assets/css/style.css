@@ -1169,9 +1169,20 @@ h3 span {
 }
 
 .art-desc{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  gap: 18px;
+  justify-content: center;
   align-items: center;
+}
+.art-about{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-self: flex-start;
+
 }
 
 
