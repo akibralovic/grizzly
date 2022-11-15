@@ -1640,7 +1640,7 @@ h3 span {
     padding-left: var(--phone-margine);
     padding-right: var(--phone-margine);
     padding-top: 40px;
-    min-width: 320px;
+
   }
   .burger-menu {
     padding-right: 10px;
@@ -1655,7 +1655,6 @@ h3 span {
   }
 
   .nav-row {
-    min-width: 320px;
     padding-left: var(--phone-margine);
     padding-right: var(--phone-margine);
   }
