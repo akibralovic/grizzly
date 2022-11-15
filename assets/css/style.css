@@ -1271,7 +1271,6 @@ margin-top: 20px;
   display: flex;
   flex-direction: column;
   border: 1px solid #e4e4e4;
-  width: 97%;
   padding: 10px;
   gap: 10px;
 }
@@ -1362,7 +1361,8 @@ margin-top: 20px;
   .nav-search,
   .nav-ul,
   .footer-nav,
-  .footer-info {
+  .footer-info
+  {
     display: none !important;
   }
 
@@ -1705,14 +1705,22 @@ margin-top: 20px;
 .main-articles{
   padding: var(--tablet-margine);
 }
-
+.art-about h1{
+  display: flex;
+}
 
 .art-desc{
-  display: flex;
-  flex-direction: column;
+  /* display: gr;
+  flex-direction: column; */
+  padding-top: 20px;
 }
 
+
+
 }
+
+
+
 
 @media only screen and (min-width: 800px) {
   .form-info input {
@@ -1720,7 +1728,9 @@ margin-top: 20px;
     width: 100% !important;
     max-width: 540px;
   }
-
+.article-mobile{
+  display: none;
+}
   /* .name-surname input{
     display: flex;
     width: 100%;
@@ -1728,6 +1738,11 @@ margin-top: 20px;
 }
 
 @media only screen and (max-width: 800px) {
+  .article-image,
+  .group-img-art{
+    display: none;
+  }
+  
   .header-container {
     padding-left: var(--phone-margine);
     padding-right: var(--phone-margine);
@@ -1987,13 +2002,61 @@ width: 100%;
   text-align: center;
 
 }
-
-.art-desc .iconHeart, .art-desc .iconCart{
-  justify-content: center;
+.article-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
 }
 
-.art-details{
+.article-image-mob{
+  display: flex;
+  border: 1px solid #e4e4e4;
+}
+
+.article-image-mob img{
+  display: flex;
+  width: 100%;
+}
+
+.art-desc{
+  display: flex;
+}
+
+/* .group-img-art-responsive{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  
+
+} */
+/* 
+.group-img-art-responsive img{
+  width: 23%;
+  border: 1px solid #e4e4e4;
+
+} */
+
+
+.group-img-art-responsive{
+  display: grid;
+grid-template-columns: auto auto auto auto;  
+gap: 10px;
+}
+
+.group-img-art-responsive img{
+  display: flex;
+  width: 100%;
+  border: 1px solid #e4e4e4;
 
 }
+
+
+.main-comm{
+  padding-left: var(--phone-margine);
+  padding-right: var(--phone-margine) 
+}
+
+
 
 }
