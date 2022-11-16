@@ -1164,6 +1164,11 @@ margin-top: 20px;
 
 /* Second Page */
 
+.similar-art{
+  display: flex;
+  padding-bottom: 15px;
+}
+
 .main-articles{
   padding-left: var(--desktop-margine);
   padding-right: var(--desktop-margine);
