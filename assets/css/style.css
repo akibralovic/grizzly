@@ -1295,8 +1295,6 @@ margin-top: 20px;
 
 #error{
   color: red;
-  border: #e13032 solid 1px;
-  width: fit-content;
   margin-bottom: 10px;
   font-size:17px
 }
