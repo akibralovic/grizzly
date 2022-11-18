@@ -114,9 +114,10 @@ function validation(){
   const errorElement = document.getElementById('error');
   
   form.addEventListener('submit', (e) => {
-    let messages = []
+    let messages = []  // this is going to be equal to all of our error messages 
+
     if (name.value === '' || name.value == null) {
-      messages.push("Name is required");
+      messages.push("Name is required"); //u slucaju da korisnik niju uneo nista i da li je input prazna 
     }
   
 
@@ -125,12 +126,12 @@ function validation(){
     }
 
     if(text.value === '' || text.value == null){
-      messages.push('This filed is required');
+      messages.push('Question is required.');
     }
 
     if (messages.length > 0) {
-      e.preventDefault()
-      errorElement.innerText = messages.join(', ')
+      e.preventDefault() //prevent out page from submitting
+      errorElement.innerText = messages.join('.   ')
     }
   });
   

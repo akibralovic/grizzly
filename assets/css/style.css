@@ -1293,7 +1293,9 @@ margin-top: 20px;
 }
 
 
-
+#error{
+  color: red;
+}
 
 
 
@@ -1695,6 +1697,7 @@ margin-top: 20px;
   font-weight: 500;
   font-size: 20px;
 }
+
 
 
 
