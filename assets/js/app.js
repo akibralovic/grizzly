@@ -126,12 +126,12 @@ function validation(){
     }
 
     if(text.value === '' || text.value == null){
-      messages.push('Question is required.');
+      messages.push('Question is required!');
     }
 
     if (messages.length > 0) {
       e.preventDefault() //prevent out page from submitting
-      errorElement.innerText = messages.join('.   ')
+      errorElement.innerText = messages.join('!   ')
     }
   });
   
