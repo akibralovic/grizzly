@@ -133,6 +133,7 @@ function validation(){
       e.preventDefault() //prevent out page from submitting
       errorElement.innerText = messages.join('!   ')
     }
+    console.log('radiiiii')
   });
   
 }
