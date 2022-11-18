@@ -523,27 +523,33 @@
             <button>Više o nama</button>
           </div>
         </div>
-        <div class="form-info">
+
+
+
+        <!-- Forma -->
+        <div class="form-info" >
           <h2>Pošaljite nam poruku</h2>
           <p>
             U slučaju da vam treba više informacija u vezi naše firme ili
             proizvoda, mozete nam poslati e-mail putem kontakt forme.
           </p>
-          <form action="" class="form-input">
-            <div class="name-surname">
-              <input type="text" placeholder="Ime" id="name" name="name" required />
-              <input type="text" placeholder="Prezime" id="subname" name="subname" />
-            </div>
-            <div class="email-company">
-              <input type="email" placeholder="Email" id="email" name="email" required />
-              <input type="text" placeholder="Firma" id="company" name="company" />
-            </div>
-            <div class="more">
-              <textarea name="questions" id="questions" cols="100" rows="10" placeholder="Vase pitanja" maxlength="500"
+          <div id="error">
+            <form action="/" id="form" class="form-input" method="GET">
+              <div class="name-surname">
+                <input type="text" placeholder="Ime" id="name" name="name" required/>
+                <input type="text" placeholder="Prezime" id="subname" name="subname"  />
+              </div>
+              <div class="email-company">
+                <input type="email" placeholder="Email" id="email" name="email" required/>
+                <input type="text" placeholder="Firma" id="company" name="company" />
+              </div>
+              <div class="more">
+                <textarea name="questions" id="questions" cols="100" rows="10" placeholder="Vase pitanja" maxlength="500"
                 required></textarea>
-            </div>
-            <div class="form-btn"><button id="send" type="submit">Pošalji</button></div>
-          </form>
+              </div>
+              <div class="form-btn"><button id="submit" type="submit">Pošalji</button></div>
+            </form>
+          </div>
 
         </div>
       </div>

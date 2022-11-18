@@ -1778,10 +1778,7 @@ margin-top: 20px;
     margin-top: 0;
     gap: 20px 0px;
     grid-template-areas:
-      "main"
-      "first"
-      "second"
-      "third";
+      "main";
   }
 
   .main-img {
