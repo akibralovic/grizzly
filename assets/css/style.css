@@ -1653,7 +1653,7 @@ margin-top: 20px;
 
   .about-form {
     display: flex;
-    width: fit-content;
+    width: 100%;
   }
 
   .about-btn {
@@ -1825,7 +1825,7 @@ margin-top: 20px;
 
   .first-row {
     background-image: url("../img/fishingRodsModile.png") center !important;
-    min-height: 265px;
+    /* min-height: 265px; */
     background-position: center;
     justify-content: center;
   }
@@ -1833,14 +1833,14 @@ margin-top: 20px;
   .second-row {
     display: flex;
     background-image: url("../img/fishingLuresMobile.webp") center !important;
-    min-height: 265px;
+    /* min-height: 265px; */
     background-position: center;
     justify-content: center;
   }
 
   .third-row {
     background-image: url("../img/fishingFloatsMobile.webp") center !important;
-    min-height: 265px;
+    /* min-height: 265px; */
     background-position: center;
     justify-content: center;
   }
