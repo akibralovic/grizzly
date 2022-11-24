@@ -108,25 +108,33 @@ function getYear() {
 // Validacija
 function validation(){
   const name = document.getElementById("name");
+  const surname = document.getElementById("surname");
   const email = document.getElementById("email");
   const text = document.getElementById("questions");
   const form = document.getElementById("form");
   const errorElement = document.getElementById('error');
+  const letters = /^[A-Za-z]+$/; //regularni izraz za slova
   
   form.addEventListener('submit', (e) => {
     let messages = []  // this is going to be equal to all of our error messages 
 
-    if (name.value === '' || name.value == null) {
-      messages.push("Name is required"); //u slucaju da korisnik niju uneo nista i da li je input prazna 
+    if (name.value === '' || name.value == null ) {
+      messages.push("Ime je obavezno!"); //u slucaju da korisnik niju uneo nista i da li je input prazna 
     }
-  
+
+    if(!name.value.match(letters) && !name.value === ''){
+      messages.push("Samo su slova dozvoljena!")
+    }
+    if(!surname.value.match(letters) && !surname.value === ''){
+      messages.push("Samo su slova dozvoljena!")
+    }
 
     if(email.value === '' || email.value == null){
-      messages.push ('Email is required');
+      messages.push ('Email je obavezan!');
     }
 
     if(text.value === '' || text.value == null){
-      messages.push('Question is required!');
+      messages.push('Pitanje je obavezno!');
     }
 
     if (messages.length > 0) {
@@ -137,11 +145,21 @@ function validation(){
   });
   
 }
+function changeImg(){
+  const mainImg = document.getElementById("main-foto-model");
+  const listImg =Array.from(document.querySelectorAll("img[data-img]"));
+
+  // kopimo podatke iz niza listImg, za svaku pojedinacnu sliku zadajemo funkciju koja: klikom na sliku ispisuje u consoli njen src
+  listImg.forEach(img=>{
+    img.addEventListener('click',()=>{
+      console.log(img.src);
+      mainImg.src = img.src; //src glavne foto dodamo src fotke iz niza koju kliknemo
+    })
+  })
 
 
-
-
-
+  console.log(listImg);
+}
 
 
 
@@ -152,5 +170,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
   searchMenu();
   showCardContent();
   getYear();
-  validation();
+  if(document.getElementById("form")){
+    validation();
+  } //proverava da li id koji se koristi postoji da ne bi izbacivalo greske
+  if(document.getElementById("main-foto-model")){
+    changeImg(); 
+  } //proverava da li id koji se koristi postoji da ne bi izbacivalo greske
 });

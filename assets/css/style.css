@@ -1418,7 +1418,7 @@ margin-top: 20px;
     display: block;
     flex-direction: column;
     background-color: var(--header-color);
-    padding-right: var(--tablet-margine);
+    /* padding-right: var(--tablet-margine); */
     color: var(--layoutText-color);
     position: absolute;
     width: 100%;
@@ -1427,16 +1427,23 @@ margin-top: 20px;
   .location-mobile {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 30px;
   }
   .where-icon {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
   }
-
+  .where-icon img{
+    display: flex;
+    width: 10%;
+    height: 80%;
+  }
+.where-icon p{
+  display: flex;
+  width: 100%;
+}
   .header-end-mobile {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1767,6 +1774,10 @@ margin-top: 20px;
     height: 33px;
     padding-right: 9px;
     margin-left: 20px;
+  }
+  .location-mobile{
+    padding-left: var(--phone-margine);
+    padding-right: var(--phone-margine);
   }
 
   .nav-row {
