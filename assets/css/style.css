@@ -81,6 +81,9 @@ body {
   width: 50%;
   min-width: 150px;
 }
+.nav-btn:active{
+  transform: scale(0.98);
+}
 .search {
   display: flex;
   align-items: right;
@@ -328,6 +331,10 @@ main {
   opacity: 0.9;
 }
 
+.first-row:active{
+  transform: scale(0.98);
+}
+
 .second-row {
   grid-area: second;
   display: flex;
@@ -342,7 +349,9 @@ main {
 .second-row:hover{
   opacity: 0.9;
 }
-
+.second-row:active{
+  transform: scale(0.98);
+}
 .third-row {
   grid-area: third;
   display: flex;
@@ -358,6 +367,9 @@ main {
   opacity: 0.9;
 }
 
+.third-row:active{
+  transform: scale(0.98);
+}
 .main-header h1 {
   width: 403px;
   /* height: 73px; */
@@ -401,17 +413,22 @@ main {
   box-sizing: content-box;
   border: none;
   text-decoration: none;
+  margin-left: -175px;
+
 }
 
 .layout-btn a:hover {
   background: var(--hover-color);
 }
+.layout-btn a:active{
+  transform: scale(0.98);
+}
 
 .layout-btn img {
   width: 184px;
   height: 40px;
-  margin-left: -195px;
   margin-top: 30px;
+  margin-left: -10px;
 }
 
 .layout-p {
@@ -646,6 +663,11 @@ main {
 
 .art-btn button:last-child:hover {
   background: var(--layoutHover-color);
+}
+
+.art-btn button:active{
+  transform: scale(0.98);
+
 }
 
 .art-img {
@@ -884,15 +906,14 @@ h3 span {
 
 /* .cat-hover{
   display: none;;
+}*/
+
+.cat-hover button:active{
+  transform: scale(0.98);
 }
 
-.cat-hover button:hover{
-  background: var(--hover-color);
-  color: var(--layoutText-color);
-}
 
-
-.cat-desc:hover + .cat-hover{
+/*.cat-desc:hover + .cat-hover{
   display: flex;
   color: white
 } */
@@ -968,7 +989,9 @@ h3 span {
   padding-top: 40px;
   min-width: 200px;
 }
-
+.about-btn button:active{
+  transform: scale(0.98);
+}
 .about button {
   background: var(--button-color);
   border: none;
@@ -1050,6 +1073,10 @@ h3 span {
 .form-btn {
   display: flex;
   padding-top: 40px;
+}
+
+.form-btn button:active{
+  transform: scale(0.98);
 }
 
 .form-info button {
@@ -1409,8 +1436,16 @@ margin-top: 20px;
     padding-right: 20px;
   }
 
+  .burger-menu img:active{
+    transform: scale(0.90);
+  }
+
   .mob-search {
     padding-left: 20px;
+  }
+
+  .mob-search img:active{
+    transform: scale(0.90);
   }
 
   /* Mobile menu  max-width: 1300px*/
