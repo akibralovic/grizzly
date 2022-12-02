@@ -68,6 +68,9 @@ body {
   cursor: pointer;
 }
 
+.logo:active{
+  transform: scale(0.98);
+}
 .nav-search {
   display: flex;
   width: 140%;
@@ -251,6 +254,9 @@ body {
   width: 142px;
   min-width: 112px;
 }
+.nav-start a:active{
+  transform: scale(0.98)
+}
 
 .nav-start a,
 .nav-end a {
@@ -262,6 +268,10 @@ body {
   justify-content: right;
   padding-left: 42px;
   width: 110%;
+}
+
+.navbar li:active{
+  transform: scale(0.90);
 }
 
 .navbar {
@@ -288,6 +298,10 @@ body {
   display: flex;
   width: 100%;
   white-space: nowrap;
+}
+
+.nav-end a:active{
+  transform: scale(0.98);
 }
 
 /*layout*/
@@ -483,6 +497,7 @@ main {
 .new a:active {
   color: #e13032;
   text-decoration-line: underline;
+  transform: scale(0.98);
 }
 
 .show-item {
@@ -1153,6 +1168,9 @@ margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
+.footer-logo:active{
+  transform: scale(0.98);
+}
 .footer-nav{
   display: flex;
   justify-content: center;
@@ -1166,6 +1184,9 @@ margin-top: 20px;
 }
 .footer-nav li{
   padding-top: 7px;
+}
+.footer-nav li:active{
+  transform: scale(0.98);
 }
 
 .footer-info{
