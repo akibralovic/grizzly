@@ -54,7 +54,6 @@ const searchMenu = () => {
   const magnifying = document.getElementById("mob-search");
 
   let active = true;
-  console.log("ide gaaas");
 
   srchMenu.addEventListener("click", () => {
     if (!active) {
